@@ -1,0 +1,136 @@
+% LaTeX file for resume A
+% This file uses the resume document class (res.cls)
+
+\documentclass[margin]{res} 
+% the margin option causes section titles to appear to the left of body text 
+\textwidth=5.0in % increase textwidth to get smaller right margin
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\usepackage[none]{hyphenat}
+
+\begin{document}
+
+\name{Josh J. Meyer\\[12pt]}
+
+\address{{\bf Contact Information}\\jjmeyer0@gmail.com}
+\address{{\bf } \\}
+
+\begin{resume} 
+
+\section{Computer Skills}
+\begin{tabular}{l p{4in}}
+  \underline{Languages:} & Java, Scala, OCaml, Bash\\
+  \underline{Software:} & Git, IntelliJ IDEA, Hortonworks Data Platform (HDP), Hortonworks DataFlow (HDF) \\
+  \underline{Other:} & Linux, Mac OS X, Spring, Guice, Maven, JUnit, JSON, XML, NiFi, Oozie, Hadoop, Docker, Kubernetes
+\end{tabular}
+
+\section{Online}
+\begin{itemize} \itemsep -2pt
+\item github.com/jjmeyer0
+\item linkedin.com/in/jjmeyer0
+\end{itemize}
+
+\section{Experience}
+ {\bf Lead Software Engineer, March 2019 to Present\\
+ Target, Minneapolis, Minnesota}
+ \begin{itemize} \itemsep -2pt
+ \item Supported, maintained, and implemented features on internal ELT application and scheduling platform.
+ \item Worked on a custom ELT application and scheduling platform that ran ~2.1 million jobs a month.
+ \item Helped set direction of the custom ELT application and scheduling platform by creating and planning releases.
+ \end{itemize}
+ 
+ {\bf Apache NiFi Consultant, April 2019 to Present\\
+ Joshua Meyer, Minneapolis, Minnesota}
+ \begin{itemize} \itemsep -2pt
+ \item Created internal documentation for NiFi sizing, best practices, and potential gotchas.
+ \item Helped other external consultants when they were facing isssues with NiFi development and system administration tasks.
+ \item Wrote best practices and NiFi flow development patterns for new users of NiFi.
+ \item Taught their managed services employees how to install and manage a secure NiFi cluster.
+ \end{itemize}
+
+ {\bf Senior Software Engineer, September 2017 to March 2018\\
+ Target, Minneapolis, Minnesota}
+ \begin{itemize} \itemsep -2pt
+ \item Instilled a proper software development lifecycle within the team.
+ \item Broke monolithic application into smaller independently deployable applications.
+ \item Enabled the platform to schedule jobs accross platforms (Kubernetes and local server).
+ \item Helped scale the scheduler to run ~2.1 million jobs a month.
+ \item Supported and enabled AutomationPortal, a custom built ELT and self service scheduling tool that served Target's Analysts, Data Engineers, and Data Scientists.
+ \end{itemize}
+
+ {\bf  Senior Consultant, February 2016 to September 2017\\
+ Hortonworks, Minneapolis, Minnesota}
+ \begin{itemize} \itemsep -2pt
+ \item Worked as a professional services consultant.
+ \item Worked for a large financial services company as a Hadoop Developer. 
+ \item Helped create and maintain a data orchestration tool that allowed a business user to ingest their data.
+ \item The orchestration tool moved data from a local landing zone to HDFS and executed Hive scripts and applied Ranger policies to newly create tables, directories, and databases.
+ \item Instilled a focus of unit testing. Helped increase unit test coverage by two times.
+ \item Contributed to Apache NiFi.
+ \item Contributed to Apache Metron.
+ \item Created example code bases for common use cases. Specifically for Ranger, Hadoop, Pig, and Spark.
+ \end{itemize}
+ 
+{\bf  Software Engineer, September 2014 to January 2016\\
+ The Nerdery, Minneapolis, Minnesota}
+ \begin{itemize} \itemsep -2pt
+ \item Automated over 200 processes that used over 1000 data feeds using Apache Falcon and Oozie.
+ \item Helped instill a maintainable and simple software development lifecycle within our group of developers.
+ \item Assisted in automating processes that handled terabytes of data each day. The whole dataset was \textgreater 2 petabytes.
+ \item Developed and maintained a tool that would ingest data into HDFS on a user defined schedule. 
+ \item Created tools to help automate generation of 1200+ Falcon entities.
+ \item Lead a team of three developers. This included prioritizing and delegating tasks to each of the developers.
+ \end{itemize}
+
+ {\bf  Application Developer II, March 2013 to September 2014\\
+ Federal Home Loan Bank of Des Moines, Des Moines, Iowa}
+ \begin{itemize} \itemsep -2pt
+ \item Played a key role in designing, implementing, testing, and maintaining a 20+ million dollar project that took 2.5 years to complete.
+ \item Created, designed, and maintained a common data format to allow different systems to communicate.
+ \item Wrote integration software that allows systems to communicate in real time using ActiveMQ and Camel.
+ \item Contributed to workflow and process changes for our deliveries to production (e.g., helped introduce some agile practices).
+ \item Responsible for the maintenance and development of Federal Home Loan Bank of Des Moines' infrastructure and applications.
+ \end{itemize}
+
+ {\bf  Application Developer I, January 2012 to March 2013\\
+   Federal Home Loan Bank of Des Moines, Des Moines, Iowa}
+ \begin{itemize} \itemsep -2pt
+ \item Refactored Federal Home Loan Bank of Des Moines' member facing web application. This enabled the development team to easily redesign and add new features.
+ \item Helped create new processes for the development team (e.g., coding standards, code reviews, occasional pair programming). 
+ \item Worked on Core Banking System project. A project that will greatly improve the trade capture processes by replacing a 10+ year old systems.
+ \item Created proof of concept applications for the Core Banking System project.
+ \item Installed and maintained a Wiki site that allowed people to collaborate and share knowledge more easily.
+ \end{itemize}
+
+ {\bf  Research Experience, May 2010 to December 2011\\
+ University of Iowa, Iowa City, Iowa}
+ \begin{itemize} \itemsep -2pt 
+ \item Created and updated tools that allow the process of developing programming languages run more efficiently.
+ \item Aided in the design and implementation of a meta-language that allows the user to create common functions. 
+ \item Attended weekly lectures that were lead by current University of Iowa graduate students.
+ \item Assisted in creating a compiler for Blaise, a new research programming language, created by my professor. Blaise is a functional programming language that requires explicit allocation/deallocation of memory.
+ \item Maintained tools I aided in creating.
+ \end{itemize}
+  
+
+ \section{Education} 
+{\bf B.S. in Computer Science, May 2011\\
+Minor in Art, May 2011}\\
+University of Iowa, Iowa City, IA
+
+ \section{Certifications}
+\begin{itemize} \itemsep -2pt
+\item Oracle Certified Associate, Java SE 7 Programmer
+\item HDP Certified Administrator
+\item HDP Certified Developer
+\item Professional Scrum Developer I
+\end{itemize}
+
+\section{Open Source Contributions}
+\begin{itemize} \itemsep -2pt
+\item Apache Metron
+\item Apache NiFi
+\end{itemize}
+
+\end{resume} 
+\end{document} 
