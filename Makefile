@@ -32,3 +32,4 @@ setupenv:
 
 clean:
 	rm *~ res.log resume.aux resume.4ct resume.4tc resume.dvi resume.idv resume.lg resume.log resume.tmp resume.xref *.tmp *\#
+
